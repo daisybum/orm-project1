@@ -1,0 +1,193 @@
+:root {
+    --main-font: Arial, sans-serif;
+    --light-gray: #e8e8e8;
+    --medium-gray: #cbcbcb;
+    --dark-gray: #888888;
+    --border-color: #a8a8a8;
+    --primary-color: #007bff;
+    --secondary-color: silver;
+    --container-width: 80%;
+    --default-padding: 10px;
+    --default-margin: 10px;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--light-gray)
+}
+
+header nav footer {
+    background-color: var(--medium-gray);
+    /* padding: 10px 0px 0px; */
+    text-align: center;
+}
+
+header {
+    padding: 10px 0;
+}
+
+header {
+    background-color: #cbcbcb;
+    padding: 10px 0px 0px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-gray);
+    padding: 10px 10px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main {
+    display: flex;
+    padding: 10px;
+}
+
+
+
+#dialog-container {
+    width: 98%;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #a8a8a8;
+    height: 500px;
+    align-self: center;
+    overflow-y: auto;
+}
+
+#dialog-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 300px;
+    margin: none;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #a8a8a8;
+}
+
+.speech-bubble {
+    padding: 10px;
+    background-color: silver;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 100%;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.user {
+    align-self: flex-end;
+}
+
+.bot {
+    background-color: #007bff;
+    color: white;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+}
+
+.sidebar button {
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+/* Style for the textarea */
+#user-article {
+    width: 100%;
+    height: 550px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style for the submit button */
+#article-form {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Changes cursor to indicate button functionality */
+}
+
+
+.main-content {
+    flex: 2;
+    margin-right: 20px;
+    border: 1px solid black;
+    height: 600px;
+    align-self: center;
+    display: flex;
+    /* Enables Flexbox layout */
+    justify-content: center;
+    /* Horizontally centers the content */
+}
+
+/* Optional: Add CSS for an animated loader if you prefer */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer p {
+    margin: 5px 0;
+  }

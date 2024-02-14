@@ -5,103 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Layout</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: #f0f0f0;
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    nav {
-      background-color: #dddddd;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: black;
-    }
-
-    form {
-      display: flex;
-      border: 1px solid black;
-      min-height: 300px;
-      /* Placeholder height */
-      flex-direction: column;
-      justify-content: flex-end;
-      width: 100%;
-      margin: none;
-      padding: 20px;
-      background-color: #CCD1FF;
-    }
-
-    input {
-      width: 100%;
-      align-self: center;
-    }
-
-    .container {
-      display: flex;
-      padding: 20px;
-    }
-
-    .main-content {
-      flex: 2;
-      margin-right: 20px;
-      border: 1px solid black;
-      height: 300px;
-      /* Placeholder height */
-    }
-
-    .sidebar {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-    }
-
-    .sidebar button {
-      padding: 10px;
-      border: 1px solid black;
-      cursor: pointer;
-      background-color: #e0e0e0;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 </head>
 
 <body>
   <header>
-    <h1>점심 메뉴 추천해줘</h1>
+    <h1>경제 물어보살</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#notice">Notice</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#notice">Notice</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="container">
-    <div class="main-content">
-      <!-- Main content goes here -->
-    </div>
+
+  <main class="flex-container">
+    <section class="article">
+      <form id="article-form">
+        <textarea id="user-article" placeholder="궁금한 내용을 입력해주세요."></textarea>
+        <button type="submit" id="submitArticle">Submit</button>
+      </form>
+    </section>
     <aside class="sidebar">
-      <form id="dialog-form">
+      <section id="dialog-box">
         <!-- Sidebar content goes here -->
         <div id="dialog-container"></div>
-        <input type="text" id="user-input" placeholder="내용을 입력해주세요.">
-        <button onclick="addSpeechBubble()">Button</button>
-      </form>
-      <!-- <div class="answer"></div> -->
+        <input type="text" id="user-input" placeholder="질문을 입력해주세요.">
+        <button id="addBubble" onclick="addSpeechBubble(null, 'user')">Submit</button>
+      </section>
     </aside>
-  </div>
+  </main>
 
-  <script src="index.js"></script>
+  <footer>
+    <div class="container">
+      <p>주소: 서울특별시 중구 명동 1가 1-1</p>
+      <p>법인명: 주식회사 오름오름</p>
+      <p>저작권 © 2024 오름오름. 모든 권리 보유.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script/index.js"></script>
 </body>
 
 </html>
