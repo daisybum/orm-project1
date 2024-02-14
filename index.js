@@ -5,7 +5,7 @@ const $answer = document.querySelector('.answer')
 const data = []
 data.push({
   "role": "system",
-  "content": "assistant는 점심시간 메뉴를 추천해주는 요리사입니다."
+  "content": "assistant는 경제에 대해 상담해주는 펀드 매니저입니다."
 })
 
 const url = `https://open-api.jejucodingcamp.workers.dev/`
