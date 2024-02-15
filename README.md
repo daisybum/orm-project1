@@ -34,17 +34,20 @@
 ```mermaid
 sequenceDiagram
     participant U as 사용자
+    participant AI as 기사/교육 자료 입력 창
     participant W as 웹 인터페이스
     participant S as 서버
 
+    U->>AI: 기사 혹은 교육 자료 입력
+    AI->>W: 입력된 기사/교육 자료 처리
     U->>W: 텍스트 영역 또는 입력 필드를 통한 질문
     W->>W: 사용자 입력 처리
-    W->>S: 서버에 요청 전송
+    W->>S: 서버에 요청 전송 (질문 및 관련 기사/교육 자료 포함)
     Note over S: 서버 요청 처리
     S->>W: 응답 반환
     W->>U: 대화 버블로 결과 표시
     U->>W: 추가 질문 또는 피드백
-    W->>S: 추가 요청 전송
+    W->>S: 추가 요청 전송 (추가 질문 및 관련 기사/교육 자료 포함)
     Note over S: 추가 요청 처리
     S->>W: 추가 응답 반환
     W->>U: 대화 버블로 추가 결과 표시
@@ -52,7 +55,7 @@ sequenceDiagram
 
 ## 4. 프로젝트 구조와 개발 일정
 ### 4.1 프로젝트 구조
-
+```
 📦orm-project1
  ┣ 📂.vscode
  ┃ ┗ 📜settings.json
@@ -67,14 +70,14 @@ sequenceDiagram
  ┃ ┃ ┣ 📜main.css
  ┃ ┃ ┣ 📜normalize.css
  ┃ ┃ ┣ 📜reset.css
- ┃ ┃ ┣ 📜some.css
  ┃ ┃ ┗ 📜tutorial.css
  ┣ 📂tutorial
  ┃ ┗ 📜index.html
  ┣ 📜index.html
  ┗ 📜README.md
+```
 
-### 4.1 개발 일정(WBS)
+### 4.2 개발 일정(WBS)
 * 아래 일정표는 머메이드로 작성했습니다.
 ```mermaid
 gantt
@@ -110,3 +113,78 @@ gantt
     프로젝트 발표                     :         des17, 2024-02-16, 6h
 ```
 
+## 5. 와이어프레임 / UI / BM
+
+### 5.1 와이어프레임
+- 아래 페이지별 상세 설명, 더 큰 이미지로 하나하나씩 설명 필요
+<img src="ui.png" width="60%">
+
+- 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
+
+### 5.2 화면 설계
+- 화면은 gif파일로 업로드해주세요.
+ 
+<table>
+    <tbody>
+        <tr>
+            <td>메인</td>
+            <td>로그인</td>
+        </tr>
+        <tr>
+            <td>
+		<img src="ui1.png" width="100%">
+            </td>
+            <td>
+                <img src="ui2.png" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td>회원가입</td>
+            <td>정보수정</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td>검색</td>
+            <td>번역</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td>선택삭제</td>
+            <td>글쓰기</td>
+        </tr>
+        <tr>
+            <td>
+	        <img src="ui3.png" width="100%">
+            </td>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+        </tr>
+        <tr>
+            <td>글 상세보기</td>
+            <td>댓글</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+            <td>
+                <img src="ui3.png" width="100%">
+            </td>
+        </tr>
+    </tbody>
+</table>
