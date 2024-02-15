@@ -1,0 +1,52 @@
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Instructions</title>
+    <link rel="stylesheet" href="../assets/style/main.css" />
+    <link rel="stylesheet" href="../assets/style/tutorial.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="../index.html">경제 물어보살</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="./index.html">Tutorial</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="instructions">
+        <h2>사용법</h2>
+        <ul>
+            <li>스텝 1: 홈페이지 접속</li>
+            <li>스텝 2: 질문 입력</li>
+            <li>스텝 3: 챗봇을 대답 듣기</li>
+            <li>스텝 4: 새로운 질문 입력</li>
+        </ul>
+    </section>
+
+    <section id="try-it">
+        <h2>직접 해보세요</h2>
+        <p>메시지를 입력하고 시뮬레이션된 응답을 확인하세요.</p>
+        <input type="text" id="userInput" placeholder="메세지를 입력하세요.">
+        <button id="bubbleButton" onclick="addSpeechBubble(null, 'user')">Send</button>
+    </section>
+
+    <section id="dialog-container"></section>
+
+    <footer>
+        <p>&copy; 2024 Chatbot Mulobosal. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/script/tutorial.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background-color: #005f73;
+}
+
+header, nav, footer {
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #888888;
+}
+
+nav a, footer p {
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+#instructions, #try-it {
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#try-it input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#try-it button {
+    padding: 10px 15px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#try-it button:hover {
+    background-color: #0096c7;
+}
+
+#dialog-container {
+    margin: 15px;
+    padding: 20px;
+    width: 96%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
