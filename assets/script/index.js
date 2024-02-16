@@ -1,8 +1,8 @@
 const $input = document.querySelector('input')
 const $button = document.querySelector('button')
 const $textarea = document.querySelector('textarea')
-const articleButton = document.querySelector('#submitArticle');
-const bubbleButton = document.querySelector('#addBubble');
+const $articleButton = document.querySelector('#submitArticle');
+const $bubbleButton = document.querySelector('#addBubble');
 
 const data = []
 data.push({
@@ -12,7 +12,7 @@ data.push({
 
 const url = `https://open-api.jejucodingcamp.workers.dev/`
 
-articleButton.addEventListener('click', function(event) {
+$articleButton.addEventListener('click', function(event) {
   event.preventDefault();
   const contents = $textarea.value
   data.push({
@@ -23,7 +23,7 @@ articleButton.addEventListener('click', function(event) {
   chatGPTAPI()
 });
 
-bubbleButton.addEventListener('click', e => {
+$bubbleButton.addEventListener('click', e => {
   e.preventDefault()
   const contents = $input.value
   data.push({
@@ -51,6 +51,12 @@ function chatGPTAPI() {
       console.log(res)
       // 답변 온 것을 assistant로 저장
       addSpeechBubble(res.choices[0].message.content, "bot")
+      hideBufferingIndicator();
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      // 에러 메시지를 사용자에게 표시
+      addSpeechBubble("Sorry, there was an error processing your request.", "bot");
       hideBufferingIndicator();
     })
 }

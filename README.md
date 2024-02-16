@@ -1,4 +1,5 @@
 # ChatGPT 기반 경제 교육 챗봇 서비스
+<img src="images/screenshot.png" width="60%">
 
 ## 1. 서비스 소개와 기능
 
@@ -115,78 +116,21 @@ gantt
 ## 5. 와이어프레임 / UI / BM
 
 ### 5.1 와이어프레임
-<img src="main page.png" width="60%">
+<img src="images/main page.png" width="60%">
 <br></br>
-<img src="about page.png" width="60%">
+<img src="images/about page.png" width="60%">
 <br></br>
-<img src="tutorial.png" width="60%">
+<img src="images/tutorial.png" width="60%">
 
 - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
-### 5.2 화면 설계
-- 화면은 gif파일로 업로드해주세요.
- 
-<table>
-    <tbody>
-        <tr>
-            <td>메인</td>
-            <td>로그인</td>
-        </tr>
-        <tr>
-            <td>
-		<img src="ui1.png" width="100%">
-            </td>
-            <td>
-                <img src="ui2.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>회원가입</td>
-            <td>정보수정</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>검색</td>
-            <td>번역</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>선택삭제</td>
-            <td>글쓰기</td>
-        </tr>
-        <tr>
-            <td>
-	        <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-        <tr>
-            <td>글 상세보기</td>
-            <td>댓글</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-            <td>
-                <img src="ui3.png" width="100%">
-            </td>
-        </tr>
-    </tbody>
-</table>
+## 6. 에러 및 해결방법
+
+### 6.1 단락 줄바꿈 에러
+- 챗GPT의 답변을 말풍선으로 출력할 때, 단락마다 줄바꿈이 이루어지지 않는 문제
+    - 기존 코드:  ChatGPT의 응답을 받을 때, textContent 속성을 사용해서 텍스트를 추가함
+        - textContent는 HTML 태그를 무시하고 순수한 텍스트만을 다룸
+    - 해결책: textContent 대신, innerHTML을 이용하여 텍스트를 추가
+        - innerHTML은 HTML 태그를 인식하므로 줄바꿈을 인식할 수 있음
+- 문제 해결 실패
+    - 챗GPT의 응답과 파싱 과정의 분석 필요

@@ -26,7 +26,7 @@ function simulateResponse() {
 $feedbackButton.addEventListener('click', e => {
   e.preventDefault()
   const feedback = $feedbackInput.value
-  // 피드백을 처리하는 로직 필요
+  // 피드백을 처리하는 로직 추후 업데이트
   console.log("Received feedback:", feedback);
   $feedbackInput.value = '' // Clear the feedback field.
 })
