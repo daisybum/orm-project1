@@ -30,7 +30,6 @@
 | orm-project1 | '/orm-project1/tutorial       | tutorial          | /orm-project1/assets/index.html       | 튜토리얼        |
 
 ## 3. 요구사항 및 기능 명세
-* 아래 일정표는 머메이드로 작성했습니다.
 ```mermaid
 sequenceDiagram
     participant U as 사용자
