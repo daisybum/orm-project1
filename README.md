@@ -101,11 +101,8 @@ gantt
     챗봇 레이아웃                     :         des12, 2024-02-14, 6h
     리디자인 반영                     :         des13, after des4, 6h
 
-    section 백엔드 개발
-    프론트엔드와 통합                 :          des13, 2024-02-15, 6h
-
     section 최종 조정 및 발표 준비
-    웹사이트 전체 검토 및 테스트      :         des14, after des13, 3h
+    웹사이트 전체 검토 및 테스트      :         des14, 2024-02-15, 3h
     마지막 조정 및 버그 수정          :         des15, after des14, 3h
     프로젝트 발표 준비                :         des16, after des15, 3h
 
