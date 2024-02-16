@@ -1,5 +1,5 @@
 # ChatGPT 기반 경제 교육 챗봇 서비스
-<img src="images/screenshot.png" width="80%">
+<img src="images/screenshot.png" width="100%">
 
 ## 1. 서비스 소개와 기능
 
@@ -116,11 +116,11 @@ gantt
 ## 5. 와이어프레임 / UI / BM
 
 ### 5.1 와이어프레임
-<img src="images/main page.png" width="80%">
+<img src="images/main page.png" width="100%">
 <br></br>
-<img src="images/about page.png" width="80%">
+<img src="images/about page.png" width="100%">
 <br></br>
-<img src="images/tutorial.png" width="80%">
+<img src="images/tutorial.png" width="100%">
 
 - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
