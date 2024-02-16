@@ -20,7 +20,7 @@
 ### 2.2 배포 URL
 - https://daisybum.github.io/orm-project1/#contact
 
-### 2.3 URL 구조(모놀리식)
+### 2.3 URL 구조
 - main
 
 | App          | URL                           | Views Function    | HTML File Name                        | Note           |
