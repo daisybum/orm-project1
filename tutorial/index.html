@@ -16,7 +16,7 @@
         <h1><a href="../index.html">경제 물어보살</a></h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
+                <li><a href="../aboutPage/index.html">About</a></li>
                 <li><a href="./index.html">Tutorial</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -37,13 +37,20 @@
         <h2>직접 해보세요</h2>
         <p>메시지를 입력하고 시뮬레이션된 응답을 확인하세요.</p>
         <input type="text" id="userInput" placeholder="메세지를 입력하세요.">
-        <button id="bubbleButton" onclick="addSpeechBubble(null, 'user')">Send</button>
+        <button id="tryButton" onclick="simulateResponse()">Send</button>
     </section>
 
     <section id="dialog-container"></section>
 
+    <section id="feedback">
+        <h2>피드백 남기기</h2>
+        <p>챗봇의 답변이 어떠셨나요? 여기에 피드백을 남겨주세요.</p>
+        <textarea id="feedbackInput" placeholder="피드백을 입력하세요."></textarea>
+        <button id="feedbackButton">Submit</button>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Chatbot Mulobosal. All rights reserved.</p>
+        <p>&copy; 2024 경제 물어보살. All rights reserved.</p>
     </footer>
 
     <script src="../assets/script/tutorial.js"></script>

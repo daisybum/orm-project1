@@ -6,42 +6,11 @@ body {
     color: #333;
 }
 
-header, footer {
-    background-color: #005f73;
-}
-
-header, nav, footer {
-    padding: 10px 0;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #888888;
-}
-
-nav a, footer p {
-    margin: 10px 0;
-    text-decoration: none;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    color: white;
-    display: inline-block;
-    margin-right: 10px;
-}
-
 section {
     padding: 20px;
 }
 
-#instructions, #try-it {
+#instructions, #try-it, #feedback {
     background-color: white;
     margin: 15px;
     padding: 20px;
@@ -67,6 +36,15 @@ section {
 
 #try-it button:hover {
     background-color: #0096c7;
+}
+
+#feedback button:hover {
+    background-color: #0096c7;
+}
+
+textarea {
+    width: 50%;
+    height: 200px;
 }
 
 #dialog-container {

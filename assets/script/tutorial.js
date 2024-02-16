@@ -1,5 +1,7 @@
 const $input = document.querySelector('input')
-const $button = document.querySelector('button')
+const $botButton = document.querySelector('#tryButton')
+const $feedbackInput = document.querySelector('#feedbackInput')
+const $feedbackButton = document.querySelector('#feedbackButton')
 
 const data = []
 data.push({
@@ -9,61 +11,37 @@ data.push({
 
 const url = `https://open-api.jejucodingcamp.workers.dev/`
 
-$button.addEventListener('click', e => {
-  e.preventDefault()
-  const contents = $input.value
-  data.push({
-    "role": "user",
-    "content": contents
-  })
-  $input.value = '' // Clear the input field.
 
-  chatGPTAPI()
-})
+function simulateResponse() {
+  var userInput = document.getElementById("userInput").value;
+  var response = '"' + userInput + '" 에 대한 챗봇의 대답을 반환합니다.';
 
-function chatGPTAPI() {
-  showBufferingIndicator();
+  addSpeechBubble(userInput, 'user')
+  addSpeechBubble(response, 'bot')
 
-  fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data),
-    redirect: 'follow'
-  })
-    .then(res => res.json())
-    .then(res => {
-      console.log(res)
-      // 답변 온 것을 assistant로 저장
-      addSpeechBubble(res.choices[0].message.content, "bot")
-      hideBufferingIndicator();
-    })
+  // 입력창 초기화
+  document.getElementById("userInput").value =''
 }
 
-function addSpeechBubble(text=null, sender) {
+$feedbackButton.addEventListener('click', e => {
+  e.preventDefault()
+  const feedback = $feedbackInput.value
+  // 피드백을 처리하는 로직 필요
+  console.log("Received feedback:", feedback);
+  $feedbackInput.value = '' // Clear the feedback field.
+})
+
+function addSpeechBubble(text = null, sender) {
   var content = text || document.getElementById("userInput").value.trim();
 
   if (content !== "") {
     var container = document.getElementById("dialog-container");
     var bubble = document.createElement("div");
-    
+
     bubble.classList.add("speech-bubble", sender)
     bubble.innerHTML = content;
 
     container.appendChild(bubble);
     container.scrollTop = container.scrollHeight;
-  }
-}
-
-function showBufferingIndicator() {
-  addSpeechBubble(" ", "loader");
-}
-
-function hideBufferingIndicator() {
-  var container = document.getElementById("dialog-container");
-  var bufferingBubbles = container.getElementsByClassName("loader");
-  if (bufferingBubbles.length > 0) {
-    container.removeChild(bufferingBubbles[0]);
   }
 }

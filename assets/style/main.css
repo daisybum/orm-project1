@@ -71,7 +71,6 @@ button {
 #dialog-box, #dialog-container {
     background-color: white;
     border: 1px solid var(--border-color);
-    /* margin: 5px; */
 }
 
 #dialog-box {
@@ -86,7 +85,7 @@ button {
     width: 98%;
     height: 550px;
     overflow-y: auto;
-    margin: 2px 5px 5px;
+    margin: 2px 5px 4px;
     align-self: center;
 }
 
@@ -114,12 +113,6 @@ button {
     flex: 1;
 }
 
-.sidebar button{
-    border: 1px solid black;
-    cursor: pointer;
-    background-color: #e0e0e0;
-}
-
 #user-article, #article-form {
     width: 100%;
     font-size: 16px;
@@ -128,7 +121,7 @@ button {
 }
 
 #user-article {
-    height: 550px;
+    height: 560px;
     resize: vertical;
 }
 
@@ -157,6 +150,5 @@ footer {
 }
 
 .container {
-    margin: 0 auto;
     text-align: center;
 }

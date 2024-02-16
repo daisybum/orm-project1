@@ -116,8 +116,11 @@ gantt
 ## 5. 와이어프레임 / UI / BM
 
 ### 5.1 와이어프레임
-- 아래 페이지별 상세 설명, 더 큰 이미지로 하나하나씩 설명 필요
-<img src="ui.png" width="60%">
+<img src="main page.png" width="60%">
+<br></br>
+<img src="about page.png" width="60%">
+<br></br>
+<img src="tutorial.png" width="60%">
 
 - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
