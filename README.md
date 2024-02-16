@@ -1,5 +1,5 @@
 # ChatGPT 기반 경제 교육 챗봇 서비스
-<img src="images/screenshot.png" width="60%">
+<img src="images/screenshot.png" width="80%">
 
 ## 1. 서비스 소개와 기능
 
@@ -116,17 +116,17 @@ gantt
 ## 5. 와이어프레임 / UI / BM
 
 ### 5.1 와이어프레임
-<img src="images/main page.png" width="60%">
+<img src="images/main page.png" width="80%">
 <br></br>
-<img src="images/about page.png" width="60%">
+<img src="images/about page.png" width="80%">
 <br></br>
-<img src="images/tutorial.png" width="60%">
+<img src="images/tutorial.png" width="80%">
 
 - 와이어 프레임은 디자인을 할 수 있다면 '피그마'를, 디자인을 할 수 없다면 '카카오 오븐'으로 쉽게 만들 수 있습니다.
 
 ## 6. 에러 및 해결방법
 
-### 6.1 단락 줄바꿈 에러
+### 6.1 단락 단위 줄바꿈 에러
 - 챗GPT의 답변을 말풍선으로 출력할 때, 단락마다 줄바꿈이 이루어지지 않는 문제
     - 기존 코드:  ChatGPT의 응답을 받을 때, textContent 속성을 사용해서 텍스트를 추가함
         - textContent는 HTML 태그를 무시하고 순수한 텍스트만을 다룸
@@ -134,3 +134,10 @@ gantt
         - innerHTML은 HTML 태그를 인식하므로 줄바꿈을 인식할 수 있음
 - 문제 해결 실패
     - 챗GPT의 응답과 파싱 과정의 분석 필요
+
+## 7. 개발하며 느낀점
+1. 문서화 작업
+    - 프로젝트 문서화를 처음으로 경험하며, 문서에 꼭 포함되어야 할 내용과 작성시 주의사항을 습득
+    - 다른 사람이 볼 때, 그리고 기술 문서를 업데이트 할 때, 가독성과 이해도를 높이기 위해 노력함
+    - 앞으로 README.md 파일을 작성할 때, 정해진 틀을 이용하고 GibHub README.md 파일들의 통일성을 높이고자 함
+2. 바닐라 자바스크립트
